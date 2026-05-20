@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eternal Explorers — Curated From The Road</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
-    rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eternal Explorers — Curated From The Road</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<style>
     *,
     *::before,
     *::after {
@@ -1834,430 +1832,491 @@
     }
   </style>
 </head>
-
 <body>
-
-  <!-- Custom Cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
-
-  <!-- NAV -->
-  <nav id="nav">
-    <a href="#" class="nav-logo">
-      <img src="images/logo.jpg" alt="Eternal Explorers Logo" class="logo-img">
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<!-- NAV -->
+<nav id="nav">
+<a class="nav-logo" href="#">
+<img alt="Eternal Explorers Logo" class="logo-img" src="images/logo.jpg"/>
       Eternal <span>Explorers</span>
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#featured" onclick="closeMenu()">Drops</a></li>
-      <li><a href="#reels" onclick="closeMenu()">From Reels</a></li>
-      <li><a href="#picks" onclick="closeMenu()">Curated</a></li>
-      <li><a href="#about" onclick="closeMenu()">About</a></li>
-    </ul>
-    <div style="display:flex;align-items:center;gap:16px">
-      <a href="https://www.instagram.com/eternal_explorers/" class="nav-cta">Follow on IG</a>
-      <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-lines">
-      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
-        <line x1="0" y1="200" x2="1440" y2="400" stroke="#c9a84c" stroke-width="0.5" />
-        <line x1="0" y1="600" x2="1440" y2="200" stroke="#c9a84c" stroke-width="0.5" />
-        <line x1="720" y1="0" x2="400" y2="900" stroke="#c9a84c" stroke-width="0.5" />
-        <circle cx="1100" cy="200" r="180" fill="none" stroke="#c9a84c" stroke-width="0.5" />
-        <circle cx="1100" cy="200" r="80" fill="none" stroke="#c9a84c" stroke-width="0.5" />
-      </svg>
-    </div>
-    <div class="hero-eyebrow">Curated from the road</div>
-    <h1 class="hero-title">
-      Things we<br>carry <em>across</em><br>the world
+</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="#featured" onclick="closeMenu()">Drops</a></li>
+<li><a href="#reels" onclick="closeMenu()">From Reels</a></li>
+<li><a href="#picks" onclick="closeMenu()">Curated</a></li>
+<li><a href="#about" onclick="closeMenu()">About</a></li>
+<li><a href="#blog" onclick="closeMenu()">Blog</a></li><li><a href="#contact" onclick="closeMenu()">Contact</a></li><li><a href="#privacy" onclick="closeMenu()">Privacy</a></li></ul>
+<div style="display:flex;align-items:center;gap:16px">
+<a class="nav-cta" href="https://www.instagram.com/eternal_explorers/">Follow on IG</a>
+<button aria-label="Menu" class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+<span></span><span></span><span></span>
+</button>
+</div>
+</nav>
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-lines">
+<svg preserveaspectratio="xMidYMid slice" viewbox="0 0 1440 900">
+<line stroke="#c9a84c" stroke-width="0.5" x1="0" x2="1440" y1="200" y2="400"></line>
+<line stroke="#c9a84c" stroke-width="0.5" x1="0" x2="1440" y1="600" y2="200"></line>
+<line stroke="#c9a84c" stroke-width="0.5" x1="720" x2="400" y1="0" y2="900"></line>
+<circle cx="1100" cy="200" fill="none" r="180" stroke="#c9a84c" stroke-width="0.5"></circle>
+<circle cx="1100" cy="200" fill="none" r="80" stroke="#c9a84c" stroke-width="0.5"></circle>
+</svg>
+</div>
+<div class="hero-eyebrow">Curated from the road</div>
+<h1 class="hero-title">
+      Things we<br/>carry <em>across</em><br/>the world
     </h1>
-    <div class="hero-sub">
-      <p class="hero-sub-text">Every product you see in our reels is handpicked from real journeys. Shop the gear, the
+<div class="hero-sub">
+<p class="hero-sub-text">Every product you see in our reels is handpicked from real journeys. Shop the gear, the
         gear doesn't shop you.</p>
-      <div class="hero-stats">
-        <div>
-          <span class="hero-stat-num">20+</span>
-          <span class="hero-stat-label">Destinations</span>
-        </div>
-        <div>
-          <span class="hero-stat-num">50+</span>
-          <span class="hero-stat-label">Products</span>
-        </div>
-        <div>
-          <span class="hero-stat-num">500+</span>
-          <span class="hero-stat-label">Followers</span>
-        </div>
-      </div>
-    </div>
-    <a href="#featured" class="hero-cta">
-      <div class="cta-button">
+<div class="hero-stats">
+<div>
+<span class="hero-stat-num">20+</span>
+<span class="hero-stat-label">Destinations</span>
+</div>
+<div>
+<span class="hero-stat-num">50+</span>
+<span class="hero-stat-label">Products</span>
+</div>
+<div>
+<span class="hero-stat-num">500+</span>
+<span class="hero-stat-label">Followers</span>
+</div>
+</div>
+</div>
+<a class="hero-cta" href="#featured">
+<div class="cta-button">
         View Products
         <span>→</span>
-      </div>
-      <div class="cta-line"></div>
-    </a>
-    <span class="hero-scroll">Scroll</span>
-  </section>
-
-  <!-- CATEGORIES -->
-  <section class="categories" id="categories" style="display: none;">
-    <div class="section-header reveal">
-      <div>
-        <div class="section-label">Browse by kind</div>
-        <h2 class="section-title">What do you <em>seek?</em></h2>
-      </div>
-    </div>
-    <div class="cat-grid reveal">
-      <a href="#" class="cat-card">
-        <span class="cat-icon">🎒</span>
-        <div class="cat-name">Carry</div>
-        <div class="cat-count">34 items</div>
-        <div class="cat-line"></div>
-      </a>
-      <a href="#" class="cat-card">
-        <span class="cat-icon">📷</span>
-        <div class="cat-name">Capture</div>
-        <div class="cat-count">28 items</div>
-        <div class="cat-line"></div>
-      </a>
-      <a href="#" class="cat-card">
-        <span class="cat-icon">🧴</span>
-        <div class="cat-name">Skin & Care</div>
-        <div class="cat-count">22 items</div>
-        <div class="cat-line"></div>
-      </a>
-      <a href="#" class="cat-card">
-        <span class="cat-icon">🏕️</span>
-        <div class="cat-name">Camp</div>
-        <div class="cat-count">41 items</div>
-        <div class="cat-line"></div>
-      </a>
-      <a href="#" class="cat-card">
-        <span class="cat-icon">✈️</span>
-        <div class="cat-name">In-Flight</div>
-        <div class="cat-count">16 items</div>
-        <div class="cat-line"></div>
-      </a>
-    </div>
-  </section>
-
-  <!-- FEATURED DROPS -->
-  <section class="featured" id="featured">
-    <div class="section-header reveal">
-      <div>
-        <div class="section-label">This season's edit</div>
-        <h2 class="section-title">Featured <em>drops</em></h2>
-      </div>
-      <a href="#" class="section-view-all">All products</a>
-    </div>
-    <div class="drops-grid reveal">
-      <!-- Small card 1 -->
-      <div class="drop-card">
-        <div class="drop-card-bg"></div>
-        <div class="drop-card-glow"></div>
-        <div class="hover-line"></div>
-        <div class="drop-image-full"><img src="images/baby-tube.png" alt="Baby Tube"></div>
-        <div class="drop-card-inner">
-          <div>
-            <div class="drop-category">Kids</div>
-            <div class="drop-name">Toy Imagine<br><em>Swim Ring</em></div>
-            <p class="drop-desc" style="font-size:11px">Inflatable baby swim ring with small inner ring safe swimming
+</div>
+<div class="cta-line"></div>
+</a>
+<span class="hero-scroll">Scroll</span>
+</section>
+<!-- CATEGORIES -->
+<section class="categories" id="categories" style="display: none;">
+<div class="section-header reveal">
+<div>
+<div class="section-label">Browse by kind</div>
+<h2 class="section-title">What do you <em>seek?</em></h2>
+</div>
+</div>
+<div class="cat-grid reveal">
+<a class="cat-card" href="#">
+<span class="cat-icon">🎒</span>
+<div class="cat-name">Carry</div>
+<div class="cat-count">34 items</div>
+<div class="cat-line"></div>
+</a>
+<a class="cat-card" href="#">
+<span class="cat-icon">📷</span>
+<div class="cat-name">Capture</div>
+<div class="cat-count">28 items</div>
+<div class="cat-line"></div>
+</a>
+<a class="cat-card" href="#">
+<span class="cat-icon">🧴</span>
+<div class="cat-name">Skin &amp; Care</div>
+<div class="cat-count">22 items</div>
+<div class="cat-line"></div>
+</a>
+<a class="cat-card" href="#">
+<span class="cat-icon">🏕️</span>
+<div class="cat-name">Camp</div>
+<div class="cat-count">41 items</div>
+<div class="cat-line"></div>
+</a>
+<a class="cat-card" href="#">
+<span class="cat-icon">✈️</span>
+<div class="cat-name">In-Flight</div>
+<div class="cat-count">16 items</div>
+<div class="cat-line"></div>
+</a>
+</div>
+</section>
+<!-- FEATURED DROPS -->
+<section class="featured" id="featured">
+<div class="section-header reveal">
+<div>
+<div class="section-label">This season's edit</div>
+<h2 class="section-title">Featured <em>drops</em></h2>
+</div>
+<a class="section-view-all" href="#">All products</a>
+</div>
+<div class="drops-grid reveal">
+<!-- Small card 1 -->
+<div class="drop-card">
+<div class="drop-card-bg"></div>
+<div class="drop-card-glow"></div>
+<div class="hover-line"></div>
+<div class="drop-image-full"><img alt="Baby Tube" src="images/baby-tube.png"/></div>
+<div class="drop-card-inner">
+<div>
+<div class="drop-category">Kids</div>
+<div class="drop-name">Toy Imagine<br/><em>Swim Ring</em></div>
+<p class="drop-desc" style="font-size:11px">Inflatable baby swim ring with small inner ring safe swimming
               tube.</p>
-          </div>
-          <div class="drop-footer">
-            <span class="drop-price"></span>
-            <a href="https://www.amazon.in/Toy-Imagine%EF%BF%BD-Float-Inflatable-Smaller/dp/B0CTK8H2FB?pd_rd_w=wtoT1&content-id=amzn1.sym.2fa5ef78-d215-4b54-bdb7-fa3d3620b822&pf_rd_p=2fa5ef78-d215-4b54-bdb7-fa3d3620b822&pf_rd_r=N5226HKH7CZACRW9WW3Z&pd_rd_wg=wVEtX&pd_rd_r=ed0bea82-4cef-4c49-8732-91bc220844ac&pd_rd_i=B0CTK8H2FB&th=1&linkCode=ll2&tag=eternalexpl03-21&linkId=8c5066411ec007e85769edf5f43c03d1&ref_=as_li_ss_tl" target="_blank" class="drop-btn">Shop</a>
-          </div>
-        </div>
-      </div>
-      <!-- Small card 2 -->
-      <div class="drop-card">
-        <div class="drop-card-bg"></div>
-        <div class="drop-card-glow"></div>
-        <div class="hover-line"></div>
-        <div class="drop-badge">New Drop</div>
-        <div class="drop-image-full"><img src="images/baby-sunscreen.png" alt="Baby Sunscreen"></div>
-        <div class="drop-card-inner">
-          <div>
-            <div class="drop-category">Skin & Care</div>
-            <div class="drop-name">Little Rituals<br><em>Sunscreen</em></div>
-            <p class="drop-desc" style="font-size:11px">SPF 50 PA++++ Organic & Natural Lotion for Kids 0-15 Yrs.</p>
-          </div>
-          <div class="drop-footer">
-            <span class="drop-price"></span>
-            <a href="https://www.amazon.in/Little-Rituals-Protection-Hypoallergenic-Technology/dp/B0DJBMM7Y4?pd_rd_w=wyPCG&content-id=amzn1.sym.2fa5ef78-d215-4b54-bdb7-fa3d3620b822&pf_rd_p=2fa5ef78-d215-4b54-bdb7-fa3d3620b822&pf_rd_r=ZH61MXZY5XF0DY3V3217&pd_rd_wg=M78y8&pd_rd_r=2ce82e68-f5e7-42d9-b20e-9f371b2aa368&pd_rd_i=B0DJBMM7Y4&th=1&linkCode=ll2&tag=eternalexpl03-21&linkId=20f38f88a32fe7e22b1f1ebf3ace11c7&ref_=as_li_ss_tl" target="_blank" class="drop-btn">Shop</a>
-          </div>
-        </div>
-      </div>
-      <!-- Small card 3 -->
-      <div class="drop-card">
-        <div class="drop-card-bg"></div>
-        <div class="drop-card-glow"></div>
-        <div class="hover-line"></div>
-        <div class="drop-image-full"><img src="images/sunscreen.png" alt="Sunscreen"></div>
-        <div class="drop-card-inner">
-          <div>
-            <div class="drop-category">Skin & Care</div>
-            <div class="drop-name">Hydrating Fluid<br><em>Sunscreen</em></div>
-            <p class="drop-desc" style="font-size:11px">SPF 60 PA++++ Broad Spectrum Cooling Sensation.</p>
-          </div>
-          <div class="drop-footer">
-            <span class="drop-price"></span>
-            <a href="https://www.amazon.in/dp/B0C17LWXVP?th=1&linkCode=ll2&tag=eternalexpl03-21&linkId=a9c0e1c805d6f9bbd725880980e205ee&ref_=as_li_ss_tl" target="_blank" class="drop-btn">Shop</a>
-          </div>
-        </div>
-      </div>
-      <!-- Small card 4 -->
-      <div class="drop-card">
-        <div class="drop-card-bg"></div>
-        <div class="drop-card-glow"></div>
-        <div class="hover-line"></div>
-        <div class="drop-image-full"><img src="images/baby-bag.png" alt="Baby Bag"></div>
-        <div class="drop-card-inner">
-          <div>
-            <div class="drop-category">Carry</div>
-            <div class="drop-name">StarAndDaisy<br><em>Diaper Bag</em></div>
-            <p class="drop-desc" style="font-size:11px">Multi compartment diaper backpack with insulated pockets.</p>
-          </div>
-          <div class="drop-footer">
-            <span class="drop-price"></span>
-            <a href="https://www.amazon.in/dp/B0FL7Z8S4B?th=1&linkCode=ll2&tag=eternalexpl03-21&linkId=fd393531ed343c1a3ee21905d796e5a5&ref_=as_li_ss_tl" target="_blank" class="drop-btn">Shop</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REEL SECTION -->
-  <section class="reel-section" id="reels" style="display: none;">
-    <div class="section-header reveal">
-      <div>
-        <div class="section-label">From our reels</div>
-        <h2 class="section-title">Shop the <em>journey</em></h2>
-      </div>
-      <a href="https://www.instagram.com/eternal_explorers/" class="section-view-all">View on Instagram</a>
-    </div>
-
-    <div class="reel-ticker">
-      <span class="reel-ticker-inner">
+</div>
+<div class="drop-footer">
+<span class="drop-price"></span>
+<a class="drop-btn" href="https://www.amazon.in/Toy-Imagine%EF%BF%BD-Float-Inflatable-Smaller/dp/B0CTK8H2FB?pd_rd_w=wtoT1&amp;content-id=amzn1.sym.2fa5ef78-d215-4b54-bdb7-fa3d3620b822&amp;pf_rd_p=2fa5ef78-d215-4b54-bdb7-fa3d3620b822&amp;pf_rd_r=N5226HKH7CZACRW9WW3Z&amp;pd_rd_wg=wVEtX&amp;pd_rd_r=ed0bea82-4cef-4c49-8732-91bc220844ac&amp;pd_rd_i=B0CTK8H2FB&amp;th=1&amp;linkCode=ll2&amp;tag=eternalexpl03-21&amp;linkId=8c5066411ec007e85769edf5f43c03d1&amp;ref_=as_li_ss_tl" target="_blank">Shop</a>
+</div>
+</div>
+</div>
+<!-- Small card 2 -->
+<div class="drop-card">
+<div class="drop-card-bg"></div>
+<div class="drop-card-glow"></div>
+<div class="hover-line"></div>
+<div class="drop-badge">New Drop</div>
+<div class="drop-image-full"><img alt="Baby Sunscreen" src="images/baby-sunscreen.png"/></div>
+<div class="drop-card-inner">
+<div>
+<div class="drop-category">Skin &amp; Care</div>
+<div class="drop-name">Little Rituals<br/><em>Sunscreen</em></div>
+<p class="drop-desc" style="font-size:11px">SPF 50 PA++++ Organic &amp; Natural Lotion for Kids 0-15 Yrs.</p>
+</div>
+<div class="drop-footer">
+<span class="drop-price"></span>
+<a class="drop-btn" href="https://www.amazon.in/Little-Rituals-Protection-Hypoallergenic-Technology/dp/B0DJBMM7Y4?pd_rd_w=wyPCG&amp;content-id=amzn1.sym.2fa5ef78-d215-4b54-bdb7-fa3d3620b822&amp;pf_rd_p=2fa5ef78-d215-4b54-bdb7-fa3d3620b822&amp;pf_rd_r=ZH61MXZY5XF0DY3V3217&amp;pd_rd_wg=M78y8&amp;pd_rd_r=2ce82e68-f5e7-42d9-b20e-9f371b2aa368&amp;pd_rd_i=B0DJBMM7Y4&amp;th=1&amp;linkCode=ll2&amp;tag=eternalexpl03-21&amp;linkId=20f38f88a32fe7e22b1f1ebf3ace11c7&amp;ref_=as_li_ss_tl" target="_blank">Shop</a>
+</div>
+</div>
+</div>
+<!-- Small card 3 -->
+<div class="drop-card">
+<div class="drop-card-bg"></div>
+<div class="drop-card-glow"></div>
+<div class="hover-line"></div>
+<div class="drop-image-full"><img alt="Sunscreen" src="images/sunscreen.png"/></div>
+<div class="drop-card-inner">
+<div>
+<div class="drop-category">Skin &amp; Care</div>
+<div class="drop-name">Hydrating Fluid<br/><em>Sunscreen</em></div>
+<p class="drop-desc" style="font-size:11px">SPF 60 PA++++ Broad Spectrum Cooling Sensation.</p>
+</div>
+<div class="drop-footer">
+<span class="drop-price"></span>
+<a class="drop-btn" href="https://www.amazon.in/dp/B0C17LWXVP?th=1&amp;linkCode=ll2&amp;tag=eternalexpl03-21&amp;linkId=a9c0e1c805d6f9bbd725880980e205ee&amp;ref_=as_li_ss_tl" target="_blank">Shop</a>
+</div>
+</div>
+</div>
+<!-- Small card 4 -->
+<div class="drop-card">
+<div class="drop-card-bg"></div>
+<div class="drop-card-glow"></div>
+<div class="hover-line"></div>
+<div class="drop-image-full"><img alt="Baby Bag" src="images/baby-bag.png"/></div>
+<div class="drop-card-inner">
+<div>
+<div class="drop-category">Carry</div>
+<div class="drop-name">StarAndDaisy<br/><em>Diaper Bag</em></div>
+<p class="drop-desc" style="font-size:11px">Multi compartment diaper backpack with insulated pockets.</p>
+</div>
+<div class="drop-footer">
+<span class="drop-price"></span>
+<a class="drop-btn" href="https://www.amazon.in/dp/B0FL7Z8S4B?th=1&amp;linkCode=ll2&amp;tag=eternalexpl03-21&amp;linkId=fd393531ed343c1a3ee21905d796e5a5&amp;ref_=as_li_ss_tl" target="_blank">Shop</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- REEL SECTION -->
+<section class="reel-section" id="reels" style="display: none;">
+<div class="section-header reveal">
+<div>
+<div class="section-label">From our reels</div>
+<h2 class="section-title">Shop the <em>journey</em></h2>
+</div>
+<a class="section-view-all" href="https://www.instagram.com/eternal_explorers/">View on Instagram</a>
+</div>
+<div class="reel-ticker">
+<span class="reel-ticker-inner">
         ✦ Bali — Queenstown — Patagonia — Iceland — Morocco — Bhutan — Kyoto — Maldives — Leh Ladakh — Santorini — Cape
         Town — Bali — Queenstown — Patagonia — Iceland — Morocco — Bhutan — Kyoto — Maldives — Leh Ladakh — Santorini —
-        Cape Town — &nbsp;&nbsp;&nbsp;
+        Cape Town —    
       </span>
-    </div>
-
-    <div class="reel-grid reveal">
-      <!-- Reel 1 -->
-      <div class="reel-card">
-        <div class="reel-card-top">
+</div>
+<div class="reel-grid reveal">
+<!-- Reel 1 -->
+<div class="reel-card">
+<div class="reel-card-top">
           🌅
           <div class="reel-play">▶</div>
-          <div class="reel-overlay">
-            <div class="reel-location">Leh, Ladakh</div>
-            <div class="reel-title">The Magnetic<br>High Pass</div>
-          </div>
-        </div>
-        <div class="reel-card-bottom">
-          <div class="reel-products">
-            <span class="reel-product-tag">Arc'teryx Jacket</span>
-            <span class="reel-product-tag">Salomon Boots</span>
-            <span class="reel-product-tag">Buff Neckwear</span>
-          </div>
-          <a href="#" class="reel-shop-link">Shop the Look</a>
-        </div>
-      </div>
-      <!-- Reel 2 -->
-      <div class="reel-card">
-        <div class="reel-card-top" style="background:#1a1510">
+<div class="reel-overlay">
+<div class="reel-location">Leh, Ladakh</div>
+<div class="reel-title">The Magnetic<br/>High Pass</div>
+</div>
+</div>
+<div class="reel-card-bottom">
+<div class="reel-products">
+<span class="reel-product-tag">Arc'teryx Jacket</span>
+<span class="reel-product-tag">Salomon Boots</span>
+<span class="reel-product-tag">Buff Neckwear</span>
+</div>
+<a class="reel-shop-link" href="#">Shop the Look</a>
+</div>
+</div>
+<!-- Reel 2 -->
+<div class="reel-card">
+<div class="reel-card-top" style="background:#1a1510">
           🏝️
           <div class="reel-play">▶</div>
-          <div class="reel-overlay">
-            <div class="reel-location">Maldives</div>
-            <div class="reel-title">Below the<br>Surface</div>
-          </div>
-        </div>
-        <div class="reel-card-bottom">
-          <div class="reel-products">
-            <span class="reel-product-tag">GoPro Hero 13</span>
-            <span class="reel-product-tag">Reef Fins</span>
-            <span class="reel-product-tag">Rash Guard</span>
-          </div>
-          <a href="#" class="reel-shop-link">Shop the Look</a>
-        </div>
-      </div>
-      <!-- Reel 3 -->
-      <div class="reel-card">
-        <div class="reel-card-top" style="background:#0f1218">
+<div class="reel-overlay">
+<div class="reel-location">Maldives</div>
+<div class="reel-title">Below the<br/>Surface</div>
+</div>
+</div>
+<div class="reel-card-bottom">
+<div class="reel-products">
+<span class="reel-product-tag">GoPro Hero 13</span>
+<span class="reel-product-tag">Reef Fins</span>
+<span class="reel-product-tag">Rash Guard</span>
+</div>
+<a class="reel-shop-link" href="#">Shop the Look</a>
+</div>
+</div>
+<!-- Reel 3 -->
+<div class="reel-card">
+<div class="reel-card-top" style="background:#0f1218">
           🏔️
           <div class="reel-play">▶</div>
-          <div class="reel-overlay">
-            <div class="reel-location">Patagonia, Chile</div>
-            <div class="reel-title">Where Wind<br>Lives</div>
-          </div>
-        </div>
-        <div class="reel-card-bottom">
-          <div class="reel-products">
-            <span class="reel-product-tag">Osprey 65L</span>
-            <span class="reel-product-tag">Nemo Tent</span>
-            <span class="reel-product-tag">Black Diamond Poles</span>
-          </div>
-          <a href="#" class="reel-shop-link">Shop the Look</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="reel-overlay">
+<div class="reel-location">Patagonia, Chile</div>
+<div class="reel-title">Where Wind<br/>Lives</div>
+</div>
+</div>
+<div class="reel-card-bottom">
+<div class="reel-products">
+<span class="reel-product-tag">Osprey 65L</span>
+<span class="reel-product-tag">Nemo Tent</span>
+<span class="reel-product-tag">Black Diamond Poles</span>
+</div>
+<a class="reel-shop-link" href="#">Shop the Look</a>
+</div>
+</div>
+</div>
+</section>
+<!-- MARQUEE DIVIDER -->
+<div class="marquee-divider" style="display: none;">
+<div style="white-space:nowrap; overflow:hidden">
+<span class="marquee-text">Carry less. See more.   <em>Shop what matters.</em>   Carry less. See more.
+          <em>Shop what matters.</em>   Carry less. See more.   <em>Shop what matters.</em>  </span>
+</div>
+</div>
+<!-- CURATED PICKS -->
+<section class="picks" id="picks" style="display: none;">
+<div class="section-header reveal">
+<div>
+<div class="section-label">The essentials list</div>
+<h2 class="section-title"><em>Always</em> in our bag</h2>
+</div>
+<a class="section-view-all" href="#">Full list</a>
+</div>
+<div class="filter-bar reveal">
+<button class="filter-btn active" onclick="filterPicks(this,'all')">All</button>
+<button class="filter-btn" onclick="filterPicks(this,'carry')">Carry</button>
+<button class="filter-btn" onclick="filterPicks(this,'capture')">Capture</button>
+<button class="filter-btn" onclick="filterPicks(this,'camp')">Camp</button>
+<button class="filter-btn" onclick="filterPicks(this,'care')">Care</button>
+<button class="filter-btn" onclick="filterPicks(this,'flight')">In-Flight</button>
+</div>
+<div class="picks-list reveal">
+<a class="pick-item" data-cat="carry" href="https://www.amazon.in">
+<div class="pick-num">01</div>
+<div class="pick-info">
+<div class="pick-name">Aer Travel Pack 3</div>
+<div class="pick-meta">Carry · 35L · Weatherproof</div>
+</div>
+<div class="pick-price">₹18,999</div>
+<div class="pick-arrow">→</div>
+</a>
+<a class="pick-item" data-cat="capture" href="https://www.amazon.in">
+<div class="pick-num">02</div>
+<div class="pick-info">
+<div class="pick-name">Sony ZV-E10 Mirrorless</div>
+<div class="pick-meta">Capture · Vlogging · 4K</div>
+</div>
+<div class="pick-price">₹62,990</div>
+<div class="pick-arrow">→</div>
+</a>
+<a class="pick-item" data-cat="flight" href="https://www.amazon.in">
+<div class="pick-num">03</div>
+<div class="pick-info">
+<div class="pick-name">Compression Packing Cubes</div>
+<div class="pick-meta">In-Flight · Set of 6 · Eagle Creek</div>
+</div>
+<div class="pick-price">₹4,200</div>
+<div class="pick-arrow">→</div>
+</a>
+<a class="pick-item" data-cat="care" href="https://www.amazon.in">
+<div class="pick-num">04</div>
+<div class="pick-info">
+<div class="pick-name">Cetaphil Sun SPF 50</div>
+<div class="pick-meta">Care · Derma Safe · Travel Size</div>
+</div>
+<div class="pick-price">₹799</div>
+<div class="pick-arrow">→</div>
+</a>
+<a class="pick-item" data-cat="camp" href="https://www.amazon.in">
+<div class="pick-num">05</div>
+<div class="pick-info">
+<div class="pick-name">Petzl Actik Core Headlamp</div>
+<div class="pick-meta">Camp · 450 lumens · Rechargeable</div>
+</div>
+<div class="pick-price">₹5,990</div>
+<div class="pick-arrow">→</div>
+</a>
+<a class="pick-item" data-cat="carry" href="https://www.amazon.in">
+<div class="pick-num">06</div>
+<div class="pick-info">
+<div class="pick-name">Bellroy Travel Folio</div>
+<div class="pick-meta">Carry · Passport · Cards · Boarding</div>
+</div>
+<div class="pick-price">₹8,500</div>
+<div class="pick-arrow">→</div>
+</a>
+</div>
+</section>
+<!-- NEWSLETTER -->
 
-  <!-- MARQUEE DIVIDER -->
-  <div class="marquee-divider" style="display: none;">
-    <div style="white-space:nowrap; overflow:hidden">
-      <span class="marquee-text">Carry less. See more. &nbsp; <em>Shop what matters.</em> &nbsp; Carry less. See more.
-        &nbsp; <em>Shop what matters.</em> &nbsp; Carry less. See more. &nbsp; <em>Shop what matters.</em> &nbsp;</span>
-    </div>
-  </div>
+<section class="newsletter" id="about">
+<div class="newsletter-box reveal">
+<div class="newsletter-eyebrow">About Eternal Explorers</div>
+<h2 class="newsletter-title">Travel gear tested on <em>real journeys</em></h2>
+<p class="newsletter-sub">
+      Eternal Explorers is a travel and lifestyle discovery platform built around products we genuinely use while travelling as a family.
+      From baby travel essentials and skincare to carry gear and road trip accessories, every recommendation is based on actual usage during our trips.
+    </p>
+<p class="newsletter-sub">
+      We share curated finds from destinations across India and beyond through Instagram reels, travel stories, and product recommendations designed for practical everyday travel.
+    </p>
+</div>
+</section>
 
-  <!-- CURATED PICKS -->
-  <section class="picks" id="picks" style="display: none;">
-    <div class="section-header reveal">
-      <div>
-        <div class="section-label">The essentials list</div>
-        <h2 class="section-title"><em>Always</em> in our bag</h2>
-      </div>
-      <a href="#" class="section-view-all">Full list</a>
-    </div>
+<!-- FOOTER -->
 
-    <div class="filter-bar reveal">
-      <button class="filter-btn active" onclick="filterPicks(this,'all')">All</button>
-      <button class="filter-btn" onclick="filterPicks(this,'carry')">Carry</button>
-      <button class="filter-btn" onclick="filterPicks(this,'capture')">Capture</button>
-      <button class="filter-btn" onclick="filterPicks(this,'camp')">Camp</button>
-      <button class="filter-btn" onclick="filterPicks(this,'care')">Care</button>
-      <button class="filter-btn" onclick="filterPicks(this,'flight')">In-Flight</button>
-    </div>
+<section class="featured" id="blog">
+<div class="section-header reveal">
+<div>
+<div class="section-label">From Instagram &amp; The Road</div>
+<h2 class="section-title">Latest travel <em>stories</em></h2>
+</div>
+</div>
+<div class="drops-grid reveal">
+<div class="drop-card">
+<div class="drop-card-inner">
+<div>
+<div class="drop-category">Beach Weekend</div>
+<div class="drop-name">Traveling with a <em>6-month-old</em></div>
+<p class="drop-desc">
+            Our Goa beach getaway taught us that the right baby essentials can completely change the travel experience.
+            These are the products we actually carried and used throughout the trip.
+          </p>
+</div>
+</div>
+</div>
+<div class="drop-card">
+<div class="drop-card-inner">
+<div>
+<div class="drop-category">Road Trip</div>
+<div class="drop-name">What stayed in our <em>car organizer</em></div>
+<p class="drop-desc">
+            Long drives become easier with a few practical essentials — sunscreen, hydration gear, quick-access storage,
+            and baby travel accessories that save time on the road.
+          </p>
+</div>
+</div>
+</div>
+<div class="drop-card">
+<div class="drop-card-inner">
+<div>
+<div class="drop-category">Travel Tips</div>
+<div class="drop-name">5 things we never travel <em>without</em></div>
+<p class="drop-desc">
+            Lightweight backpacks, compact organizers, sun protection, power banks, and travel-friendly baby gear have become permanent parts of our packing list.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <div class="picks-list reveal">
-      <a href="https://www.amazon.in" class="pick-item" data-cat="carry">
-        <div class="pick-num">01</div>
-        <div class="pick-info">
-          <div class="pick-name">Aer Travel Pack 3</div>
-          <div class="pick-meta">Carry · 35L · Weatherproof</div>
-        </div>
-        <div class="pick-price">₹18,999</div>
-        <div class="pick-arrow">→</div>
-      </a>
-      <a href="https://www.amazon.in" class="pick-item" data-cat="capture">
-        <div class="pick-num">02</div>
-        <div class="pick-info">
-          <div class="pick-name">Sony ZV-E10 Mirrorless</div>
-          <div class="pick-meta">Capture · Vlogging · 4K</div>
-        </div>
-        <div class="pick-price">₹62,990</div>
-        <div class="pick-arrow">→</div>
-      </a>
-      <a href="https://www.amazon.in" class="pick-item" data-cat="flight">
-        <div class="pick-num">03</div>
-        <div class="pick-info">
-          <div class="pick-name">Compression Packing Cubes</div>
-          <div class="pick-meta">In-Flight · Set of 6 · Eagle Creek</div>
-        </div>
-        <div class="pick-price">₹4,200</div>
-        <div class="pick-arrow">→</div>
-      </a>
-      <a href="https://www.amazon.in" class="pick-item" data-cat="care">
-        <div class="pick-num">04</div>
-        <div class="pick-info">
-          <div class="pick-name">Cetaphil Sun SPF 50</div>
-          <div class="pick-meta">Care · Derma Safe · Travel Size</div>
-        </div>
-        <div class="pick-price">₹799</div>
-        <div class="pick-arrow">→</div>
-      </a>
-      <a href="https://www.amazon.in" class="pick-item" data-cat="camp">
-        <div class="pick-num">05</div>
-        <div class="pick-info">
-          <div class="pick-name">Petzl Actik Core Headlamp</div>
-          <div class="pick-meta">Camp · 450 lumens · Rechargeable</div>
-        </div>
-        <div class="pick-price">₹5,990</div>
-        <div class="pick-arrow">→</div>
-      </a>
-      <a href="https://www.amazon.in" class="pick-item" data-cat="carry">
-        <div class="pick-num">06</div>
-        <div class="pick-info">
-          <div class="pick-name">Bellroy Travel Folio</div>
-          <div class="pick-meta">Carry · Passport · Cards · Boarding</div>
-        </div>
-        <div class="pick-price">₹8,500</div>
-        <div class="pick-arrow">→</div>
-      </a>
-    </div>
-  </section>
+<section class="newsletter" id="contact">
+<div class="newsletter-box reveal">
+<div class="newsletter-eyebrow">Get in touch</div>
+<h2 class="newsletter-title">Contact <em>Eternal Explorers</em></h2>
+<p class="newsletter-sub">
+      For collaborations, product reviews, travel partnerships, or questions about featured products, contact us at:
+    </p>
+<p class="newsletter-sub">
+      Email: hello@eternalexplorers.in<br/>
+      Instagram: @eternal_explorers
+    </p>
+</div>
+</section>
 
-  <!-- NEWSLETTER -->
-  <section class="newsletter" id="about" style="display: none;">
-    <div class="newsletter-box reveal">
-      <div class="newsletter-eyebrow">Stay in the loop</div>
-      <h2 class="newsletter-title">New drops,<br><em>first.</em></h2>
-      <p class="newsletter-sub">We drop curated finds every week. Only the good stuff. Never spam.</p>
-      <div class="newsletter-form">
-        <input type="email" class="newsletter-input" placeholder="your@email.com">
-        <button class="newsletter-submit">Join</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-top">
-      <div class="footer-brand">
-        <div class="footer-logo">Eternal <span>Explorers</span></div>
-        <p class="footer-tagline">We travel so you know exactly what to pack. Every product is tested on real roads, in
+<section class="newsletter" id="privacy">
+<div class="newsletter-box reveal">
+<div class="newsletter-eyebrow">Policies &amp; Disclosure</div>
+<h2 class="newsletter-title">Privacy Policy &amp; <em>Affiliate Disclosure</em></h2>
+<p class="newsletter-sub">
+      Eternal Explorers may collect basic visitor information such as browser type, device information, and analytics data to improve the website experience.
+      We do not sell personal information to third parties.
+    </p>
+<p class="newsletter-sub">
+      Some links on this website are affiliate links. As an Amazon Associate, we earn from qualifying purchases.
+      This means we may earn a small commission when you purchase products through our links, at no additional cost to you.
+    </p>
+<p class="newsletter-sub">
+      All recommendations are based on products we personally use, test, or genuinely believe provide value for travelers and families.
+    </p>
+</div>
+</section>
+<footer>
+<div class="footer-top">
+<div class="footer-brand">
+<div class="footer-logo">Eternal <span>Explorers</span></div>
+<p class="footer-tagline">We travel so you know exactly what to pack. Every product is tested on real roads, in
           real weather, with real consequences.</p>
-      </div>
-      <div>
-        <div class="footer-col-title">Shop</div>
-        <ul class="footer-links">
-          <li><a href="#">New Drops</a></li>
-          <li><a href="#">Carry</a></li>
-          <li><a href="#">Capture</a></li>
-          <li><a href="#">Camp</a></li>
-          <li><a href="#">Care</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-col-title">Reels</div>
-        <ul class="footer-links">
-          <li><a href="#">Leh Ladakh</a></li>
-          <li><a href="#">Bali</a></li>
-          <li><a href="#">Muscat</a></li>
-          <li><a href="#">Shimla</a></li>
-          <li><a href="#">Munnar</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-col-title">About</div>
-        <ul class="footer-links">
-          <li><a href="#">Our Story</a></li>
-          <li><a href="https://www.instagram.com/eternal_explorers/">Instagram</a></li>
-          <li><a href="#">Affiliate Disclosure</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-copy">© 2026 Eternal Explorers · Affiliate links disclosed · Made with wanderlust</div>
-      <div class="footer-social">
-        <a href="https://www.instagram.com/eternal_explorers/">Instagram</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+</div>
+<div>
+<div class="footer-col-title">Shop</div>
+<ul class="footer-links">
+<li><a href="#">New Drops</a></li>
+<li><a href="#">Carry</a></li>
+<li><a href="#">Capture</a></li>
+<li><a href="#">Camp</a></li>
+<li><a href="#">Care</a></li>
+</ul>
+</div>
+<div>
+<div class="footer-col-title">Reels</div>
+<ul class="footer-links">
+<li><a href="#">Leh Ladakh</a></li>
+<li><a href="#">Bali</a></li>
+<li><a href="#">Muscat</a></li>
+<li><a href="#">Shimla</a></li>
+<li><a href="#">Munnar</a></li>
+</ul>
+</div>
+<div>
+<div class="footer-col-title">About</div>
+<ul class="footer-links"><li><a href="#about">Our Story</a></li><li><a href="https://www.instagram.com/eternal_explorers/">Instagram</a></li><li><a href="#privacy">Affiliate Disclosure</a></li><li><a href="#privacy">Privacy Policy</a></li><li><a href="#contact">Contact</a></li></ul>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-copy">© 2026 Eternal Explorers · Affiliate links disclosed · Made with wanderlust</div>
+<div class="footer-social">
+<a href="https://www.instagram.com/eternal_explorers/">Instagram</a>
+</div>
+</div>
+</footer>
+<script>
     // Mobile menu
     function toggleMenu() {
       const links = document.getElementById('navLinks');
@@ -2319,5 +2378,4 @@
     });
   </script>
 </body>
-
 </html>
